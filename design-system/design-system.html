@@ -4,114 +4,148 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css -->
     <link rel="stylesheet" href="../index.css" />
     <title>Design System</title>
   </head>
-  <body class="text-dark">
+  <body>
     <header>
-      <div class="container">
-        <h1>Design System</h1>
-
-        <section id="colours">
-          <h2><span class="text-light">01</span>Colours</h2>
-          <div class="grid" style="grid-template-columns: repeat(4, 1fr)">
-            <div class="text-accent"><h3>PRIMARY</h3></div>
-            <div>
-              <div
-                class="bg-accent"
-                style="
-                  margin-bottom: 0.7rem;
-                  border-radius: 50%;
-                  aspect-ratio: 1;
-                  width: 4rem;
-                "
-              ></div>
-              <p>Slightly Desaturated Cyan</p>
-              <p class="text-medium">HEX : #5FB4A2</p>
-              <p class="text-medium">RGB : rgb(95, 180, 162)</p>
-              <p class="text-medium">HSL : hsl(167°, 36%, 54%)</p>
-            </div>
-            <div>
-              <div
-                class="bg-dark"
-                style="
-                  margin-bottom: 0.7rem;
-                  border-radius: 50%;
-                  aspect-ratio: 1;
-                  width: 4rem;
-                "
-              ></div>
-              <p>Dark Blue</p>
-              <p class="text-medium">HEX : #203A4C</p>
-              <p class="text-medium">RGB : rgb(32, 58, 76)</p>
-              <p class="text-medium">HSL : hsl(205°, 41%, 21%)</p>
-            </div>
-            <div>
-              <div
-                class="bg-dark-grey"
-                style="
-                  margin-bottom: 0.7rem;
-                  border-radius: 50%;
-                  aspect-ratio: 1;
-                  width: 4rem;
-                "
-              ></div>
-              <p>Grayish Dark Blue</p>
-              <p class="text-medium">HEX : #33323D</p>
-              <p class="text-medium">RGB : rgb(51, 50, 61)</p>
-              <p class="text-medium">HSL : hsl(245°, 10%, 22%)</p>
-            </div>
-
-            <div class="text-accent"><h3>SECONDARY</h3></div>
-            <div>
-              <div
-                class="bg-light"
-                style="
-                  margin-bottom: 0.7rem;
-                  border: 1px solid lightgray;
-                  border-radius: 50%;
-                  aspect-ratio: 1;
-                  width: 4rem;
-                "
-              ></div>
-              <p>Very Light Grey</p>
-              <p class="text-medium">HEX : #FAFAFA</p>
-              <p class="text-medium">RGB : rgb(250, 250, 250)</p>
-              <p class="text-medium">HSL : hsl(0°, 0%, 98%)</p>
-            </div>
-            <div>
-              <div
-                class="bg-medium"
-                style="
-                  margin-bottom: 0.7rem;
-                  border-radius: 50%;
-                  aspect-ratio: 1;
-                  width: 4rem;
-                "
-              ></div>
-              <p>Light Grey</p>
-              <p class="text-medium">HEX : #EAEAEB</p>
-              <p class="text-medium">RGB : rgb(234, 234, 235)</p>
-              <p class="text-medium">HSL : hsl(240°, 2%, 92%)</p>
-            </div>
-            <div>
-              <div
-                class="bg-error"
-                style="
-                  margin-bottom: 0.7rem;
-                  border-radius: 50%;
-                  aspect-ratio: 1;
-                  width: 4rem;
-                "
-              ></div>
-              <p>Bright Red</p>
-              <p class="text-medium">HEX : #F43030</p>
-              <p class="text-medium">RGB : rgb(244, 48, 48)</p>
-              <p class="text-medium">HSL : hsl(0°, 90%, 57%)</p>
-            </div>
-          </div>
-        </section>
-      </div>
+      <h1
+        class="ff-serif fs-800 bg-dark-grey letter-spacing-1"
+        style="color: white; padding: 3rem 2rem"
+      >
+        Design System
+      </h1>
     </header>
+    <div class="container">
+      <section
+        id="colours"
+        style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
+      >
+        <h2
+          class="ff-serif fs-700 letter-spacing-2"
+          style="margin-bottom: 2rem"
+        >
+          <span class="text-light">01</span>Colours
+        </h2>
+        <div class="grid" style="grid-template-columns: repeat(4, 1fr)">
+          <div class="text-accent letter-spacing-4 uppercase">
+            <h3>Primary</h3>
+          </div>
+          <div>
+            <div
+              class="bg-accent"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p>Slightly Desaturated Cyan</p>
+            <p class="text-medium">HEX : #5FB4A2</p>
+            <p class="text-medium">RGB : rgb(95, 180, 162)</p>
+            <p class="text-medium">HSL : hsl(167°, 36%, 54%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-dark"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p>Dark Blue</p>
+            <p class="text-medium">HEX : #203A4C</p>
+            <p class="text-medium">RGB : rgb(32, 58, 76)</p>
+            <p class="text-medium">HSL : hsl(205°, 41%, 21%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-dark-grey"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p>Grayish Dark Blue</p>
+            <p class="text-medium">HEX : #33323D</p>
+            <p class="text-medium">RGB : rgb(51, 50, 61)</p>
+            <p class="text-medium">HSL : hsl(245°, 10%, 22%)</p>
+          </div>
+
+          <div class="text-accent letter-spacing-4 uppercase">
+            <h3>Secondary</h3>
+          </div>
+          <div>
+            <div
+              class="bg-light"
+              style="
+                margin-bottom: 0.7rem;
+                border: 1px solid lightgray;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p>Very Light Grey</p>
+            <p class="text-medium">HEX : #FAFAFA</p>
+            <p class="text-medium">RGB : rgb(250, 250, 250)</p>
+            <p class="text-medium">HSL : hsl(0°, 0%, 98%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-medium"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p>Light Grey</p>
+            <p class="text-medium">HEX : #EAEAEB</p>
+            <p class="text-medium">RGB : rgb(234, 234, 235)</p>
+            <p class="text-medium">HSL : hsl(240°, 2%, 92%)</p>
+          </div>
+          <div>
+            <div
+              class="bg-error"
+              style="
+                margin-bottom: 0.7rem;
+                border-radius: 50%;
+                aspect-ratio: 1;
+                width: 4rem;
+              "
+            ></div>
+            <p>Bright Red</p>
+            <p class="text-medium">HEX : #F43030</p>
+            <p class="text-medium">RGB : rgb(244, 48, 48)</p>
+            <p class="text-medium">HSL : hsl(0°, 90%, 57%)</p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="typography"
+        style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
+      >
+        <h2 class="ff-serif fs-700 letter-spacing-2">
+          <span class="text-light">02</span>Typography
+        </h2>
+      </section>
+    </div>
   </body>
 </html>

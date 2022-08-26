@@ -11,6 +11,17 @@
   --clr-secondary-light: 0 0% 98%;
   --clr-secondary-medium: 240 3% 61%;
   --clr-secondary-red: 0 90% 57%;
+
+  /* font-sizes */
+  --fs-400: 0.938rem;
+  --fs-500: 1rem;
+  --fs-600: 2rem;
+  --fs-700: 2.625rem;
+  --fs-800: 3.125rem;
+
+  /* font-families */
+  --ff-serif: "Ibarra Real Nova", serif;
+  --ff-sans: "Public Sans", sans-serif;
 }
 
 /* ------------------- */
@@ -39,9 +50,23 @@ picture {
   margin: 0;
 }
 
+/* Reset font-weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
 /* Reset body */
 body {
-  line-height: 1.5;
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-primary-grey));
+  line-height: 1.7;
   min-height: 100vh;
 }
 
@@ -106,7 +131,6 @@ select {
 }
 
 /* Colours */
-
 .text-light {
   color: hsl(var(--clr-secondary-medium) / 0.6);
 }
@@ -141,4 +165,52 @@ select {
 }
 .bg-dark-grey {
   background-color: hsl(var(--clr-primary-grey));
+}
+
+/* Typography */
+
+.ff-serif {
+  font-family: var(--ff-serif);
+}
+.ff-sans {
+  font-family: var(--ff-sans);
+}
+
+.letter-spacing-1 {
+  letter-spacing: -0.45px;
+}
+.letter-spacing-2 {
+  letter-spacing: -0.36px;
+}
+.letter-spacing-3 {
+  letter-spacing: -0.29px;
+}
+.letter-spacing-4 {
+  letter-spacing: 5px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
 }
