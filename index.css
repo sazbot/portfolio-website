@@ -1,4 +1,19 @@
 /* ------------------- */
+/*  Custom Properties  */
+/* ------------------- */
+
+:root {
+  /* colours */
+  --clr-primary-cyan: 167 36% 54%;
+  --clr-primary-blue: 205 41% 21%;
+  --clr-primary-grey: 245 10% 22%;
+
+  --clr-secondary-light: 0 0% 98%;
+  --clr-secondary-medium: 240 3% 61%;
+  --clr-secondary-red: 0 90% 57%;
+}
+
+/* ------------------- */
 /*        Reset        */
 /* ------------------- */
 
@@ -61,6 +76,7 @@ select {
 /*    Utility Classes  */
 /* ------------------- */
 
+/* General  */
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -87,4 +103,42 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+/* Colours */
+
+.text-light {
+  color: hsl(var(--clr-secondary-medium) / 0.6);
+}
+.text-medium {
+  color: hsl(var(--clr-secondary-medium));
+}
+.text-dark {
+  color: hsl(var(--clr-primary-grey));
+}
+
+.text-accent {
+  color: hsl(var(--clr-primary-cyan));
+}
+.text-error {
+  color: hsl(var(--clr-secondary-red));
+}
+
+.bg-light {
+  background-color: hsl(var(--clr-secondary-light));
+}
+.bg-medium {
+  background-color: hsl(var(--clr-secondary-medium) / 0.3);
+}
+.bg-dark {
+  background-color: hsl(var(--clr-primary-blue));
+}
+.bg-accent {
+  background-color: hsl(var(--clr-primary-cyan));
+}
+.bg-error {
+  background-color: hsl(var(--clr-secondary-red));
+}
+.bg-dark-grey {
+  background-color: hsl(var(--clr-primary-grey));
 }
