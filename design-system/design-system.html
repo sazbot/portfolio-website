@@ -218,7 +218,7 @@
           </div>
         </div>
 
-        <div class="flex">
+        <div class="flex" style="--gap: 3rem">
           <div class="flow" style="flex-basis: 100%; --flow-space: 2.5rem">
             <!-- Heading Typography -->
             <div class="text-accent bold letter-spacing-4 uppercase">
@@ -302,7 +302,7 @@
         >
           <span class="text-light">03</span>Buttons
         </h2>
-        <div class="flex">
+        <div class="flex" style="--gap: 3rem">
           <div class="flow" style="flex-basis: 100%">
             <!-- Primary Button -->
             <div class="text-accent bold letter-spacing-4 uppercase">
@@ -346,19 +346,38 @@
         >
           <span class="text-light">04</span>Forms
         </h2>
-        <div class="flex">
+        <div class="flex" style="--gap: 3rem">
           <div class="flow" style="flex-basis: 100%">
             <!-- Text Area -->
             <div class="text-accent bold letter-spacing-4 uppercase">
               <h3>Text Area</h3>
             </div>
+
             <div class="flow" style="--flow-space: 0.7rem">
               <label for="message" class="block">Message</label>
               <textarea
                 placeholder="What is your message?"
                 id="message"
                 name="message"
+                required
               ></textarea>
+            </div>
+          </div>
+          <div class="flow" style="flex-basis: 100%">
+            <!-- Text Field -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
+              <h3>Text Field</h3>
+            </div>
+
+            <div class="flow" style="--flow-space: 0.7rem">
+              <label for="name" class="block">Name</label>
+              <input
+                type="text"
+                placeholder="Insert your name here..."
+                id="message"
+                name="message"
+                required
+              />
             </div>
           </div>
         </div>

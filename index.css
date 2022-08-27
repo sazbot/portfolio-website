@@ -296,11 +296,13 @@ select {
 
 #message {
   background-color: hsl(var(--clr-secondary-medium) / 0.2);
-  border: none;
+  outline: none;
+  border: 1px solid hsl(var(--clr-secondary-medium) / 0.2);
   padding: 1em;
   width: 100%;
   resize: none;
   height: auto;
+  transition: border-color 200ms ease-in-out;
 }
 
 #message::placeholder {
@@ -310,4 +312,5 @@ select {
 #message:hover,
 #message:focus {
   cursor: pointer;
+  border-color: hsl(var(--clr-primary-cyan));
 }
