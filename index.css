@@ -113,6 +113,10 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.block {
+  display: block;
+}
+
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
 }
@@ -237,6 +241,7 @@ select {
 /*      Components     */
 /* ------------------- */
 
+/* Buttons */
 .btn {
   padding-block: 1em;
   border: none;
@@ -250,7 +255,7 @@ select {
 
 .primary-btn {
   padding-inline: 1.5em;
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
 }
 
 .primary-btn::before {
@@ -259,7 +264,7 @@ select {
   position: relative;
   padding: 1.2em;
   left: -1.5em;
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
 }
 
 .primary-btn:hover,
@@ -276,11 +281,33 @@ select {
   background-color: white;
   border: 0.5px solid hsl(var(--clr-primary-grey));
   padding-inline: 2.2em;
-  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .secondary-btn:hover,
 .secondary-btn:focus {
   background-color: hsl(var(--clr-primary-grey));
   color: white;
+}
+
+/* Form elements */
+
+/* Text area */
+
+#message {
+  background-color: hsl(var(--clr-secondary-medium) / 0.2);
+  border: none;
+  padding: 1em;
+  width: 100%;
+  resize: none;
+  height: auto;
+}
+
+#message::placeholder {
+  color: hsl(var(--clr-secondary-medium) / 0.7);
+}
+
+#message:hover,
+#message:focus {
+  cursor: pointer;
 }
