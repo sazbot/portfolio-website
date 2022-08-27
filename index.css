@@ -254,13 +254,13 @@ select {
   cursor: pointer;
 }
 
-/* .primary-btn {
+.primary-btn {
   padding-inline: 1.5em;
   transition: background-color 300ms ease-in-out;
 }
 
 .primary-btn::before {
-  content: url(/images/icons/down-arrows.svg);
+  content: url(images/icons/down-arrows.svg);
   background-color: hsl(var(--clr-secondary-light) / 0.1);
   position: relative;
   padding: 1.2em;
@@ -276,7 +276,7 @@ select {
 .primary-btn:hover::before,
 .primary-btn:focus::before {
   background-color: hsl(var(--clr-primary-blue) / 0.2);
-} */
+}
 
 .secondary-btn {
   background-color: white;
