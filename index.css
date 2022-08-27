@@ -254,7 +254,7 @@ select {
   cursor: pointer;
 }
 
-.primary-btn {
+/* .primary-btn {
   padding-inline: 1.5em;
   transition: background-color 300ms ease-in-out;
 }
@@ -276,7 +276,7 @@ select {
 .primary-btn:hover::before,
 .primary-btn:focus::before {
   background-color: hsl(var(--clr-primary-blue) / 0.2);
-}
+} */
 
 .secondary-btn {
   background-color: white;
@@ -289,6 +289,31 @@ select {
 .secondary-btn:focus {
   background-color: hsl(var(--clr-primary-grey));
   color: white;
+}
+
+.test-btn {
+  transition: background-color 300ms ease-in-out;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test-btn img {
+  padding-inline: 0.8em;
+  transition: filter 300ms ease-in-out;
+}
+
+.test-btn p {
+  padding-right: 1.6em;
+}
+
+.test-btn:hover,
+.test-btn:focus {
+  background-color: hsl(var(--clr-primary-cyan));
+}
+
+.test-btn:hover img {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(500%)
+    contrast(100%);
 }
 
 /* Form elements */
