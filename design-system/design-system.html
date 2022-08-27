@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <!-- Custom css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../index.css" />
     <title>Design System</title>
   </head>
@@ -27,6 +27,7 @@
       </h1>
     </header>
     <div class="container">
+      <!-- Colours section -->
       <section
         id="colours"
         style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
@@ -38,6 +39,7 @@
           <span class="text-light">01</span>Colours
         </h2>
         <div class="grid" style="grid-template-columns: repeat(4, 1fr)">
+          <!-- Primary -->
           <div class="text-accent bold letter-spacing-4 uppercase">
             <h3>Primary</h3>
           </div>
@@ -87,6 +89,7 @@
             <p class="text-medium">HSL : hsl(245°, 10%, 22%)</p>
           </div>
 
+          <!-- Secondary -->
           <div class="text-accent bold letter-spacing-4 uppercase">
             <h3>Secondary</h3>
           </div>
@@ -138,6 +141,7 @@
           </div>
         </div>
       </section>
+      <!-- Typography section -->
       <section
         id="typography"
         style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
@@ -150,8 +154,9 @@
         </h2>
         <div
           class="grid"
-          style="grid-template-columns: 2fr 1fr 1fr; margin-bottom: 2em"
+          style="grid-template-columns: 2fr 1fr 1fr; margin-bottom: 3rem"
         >
+          <!-- Font-Family -->
           <div class="text-accent bold letter-spacing-4 uppercase">
             <h3>Font-Family</h3>
           </div>
@@ -214,63 +219,54 @@
         </div>
 
         <div class="flex">
-          <div style="flex-basis: 100%">
-            <div
-              class="text-accent bold letter-spacing-4 uppercase"
-              style="margin-bottom: 2rem"
-            >
+          <div class="flow" style="flex-basis: 100%; --flow-space: 2.5rem">
+            <!-- Heading Typography -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
               <h3>Headings</h3>
             </div>
+            <!-- H1 -->
             <div>
-              <p class="text-medium">
+              <p class="text-medium" style="margin-bottom: 0.5rem">
                 <span class="bold">H1</span>, Ibarra Real Nova Bold, 50px, 50px
                 Line, -0,45 Character
               </p>
-              <p
-                class="ff-serif fs-800 bold letter-spacing-1"
-                style="margin: 1rem 0 4rem 0"
-              >
+              <p class="ff-serif fs-800 bold letter-spacing-1">
                 Jived fox nymph grabs quick waltz
               </p>
             </div>
+            <!-- H2 -->
             <div>
-              <p class="text-medium">
+              <p class="text-medium" style="margin-bottom: 0.5rem">
                 <span class="bold">H2</span>, Ibarra Real Nova Bold, 40px, 42px
                 Line, -0,36 Character
               </p>
-              <p
-                class="ff-serif fs-700 bold letter-spacing-2"
-                style="margin: 1rem 0 4rem 0"
-              >
+              <p class="ff-serif fs-700 bold letter-spacing-2">
                 Jived fox nymph grabs quick waltz
               </p>
             </div>
+            <!-- H3 -->
             <div>
-              <p class="text-medium">
+              <p class="text-medium" style="margin-bottom: 0.5rem">
                 <span class="bold">H3</span>, Ibarra Real Nova Regular, 32px,
                 36px Line, -0,29 Character
               </p>
-              <p
-                class="ff-serif fs-600 bold letter-spacing-3"
-                style="margin: 1rem 0 4rem 0"
-              >
+              <p class="ff-serif fs-600 bold letter-spacing-3">
                 Jived fox nymph grabs quick waltz
               </p>
             </div>
           </div>
-          <div style="flex-basis: 100%">
-            <div
-              class="text-accent bold letter-spacing-4 uppercase"
-              style="margin-bottom: 2rem"
-            >
+          <div class="flow" style="flex-basis: 100%; --flow-space: 2.5rem">
+            <!-- Body Typography -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
               <h3>Body</h3>
             </div>
+            <!-- Body 1 -->
             <div>
-              <p class="text-medium">
+              <p class="text-medium" style="margin-bottom: 0.5rem">
                 <span class="bold">Body 1</span>, Public Sans Regular, 16px,
                 30px Line
               </p>
-              <p class="ff-sans fs-500" style="margin: 1rem 0 4rem 0">
+              <p class="ff-sans fs-500">
                 Sed egestas, ante et vulputate volutpat, eros pede semper est,
                 vitae luctus metus libero eu augue. Morbi purus libero, faucibus
                 adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
@@ -278,18 +274,63 @@
                 Vestibulum volutpat, lacus a ultrices sagittis, mi neque.
               </p>
             </div>
+            <!-- Body 2 -->
             <div>
-              <p class="text-medium">
+              <p class="text-medium" style="margin-bottom: 0.5rem">
                 <span class="bold">Body 2</span>, Public Sans Regular, 15px,
                 30px Line
               </p>
-              <p class="ff-sans fs-400" style="margin: 1rem 0 4rem 0">
+              <p class="ff-sans fs-400">
                 Sed egestas, ante et vulputate volutpat, eros pede semper est,
                 vitae luctus metus libero eu augue. Morbi purus libero, faucibus
                 adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
                 elementum hendrerit tortor. Sed semper lorem at felis.
                 Vestibulum volutpat, lacus a ultrices sagittis, mi neque.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Buttons section -->
+      <section
+        id="typography"
+        style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
+      >
+        <h2
+          class="ff-serif fs-700 bold letter-spacing-2"
+          style="margin-bottom: 2rem"
+        >
+          <span class="text-light">03</span>Buttons
+        </h2>
+        <div class="flex">
+          <div class="flow" style="flex-basis: 100%">
+            <!-- Primary Button -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
+              <h3>Primary</h3>
+            </div>
+            <div>
+              <a href="#"
+                ><button
+                  class="btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
+                >
+                  About Me
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="flow" style="flex-basis: 100%">
+            <!-- Secondary Button -->
+            <div class="text-accent bold letter-spacing-4 uppercase">
+              <h3>Secondary</h3>
+            </div>
+            <div>
+              <a href="#"
+                ><button
+                  class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
+                >
+                  Go to portfolio
+                </button></a
+              >
             </div>
           </div>
         </div>
