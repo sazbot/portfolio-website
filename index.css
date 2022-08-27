@@ -246,6 +246,7 @@ select {
   padding-block: 1em;
   border: none;
   font-weight: 400;
+  margin-block: 1rem;
 }
 
 .btn:hover,
@@ -274,7 +275,7 @@ select {
 
 .primary-btn:hover::before,
 .primary-btn:focus::before {
-  background-color: hsl(var(--clr-primary-blue) / 0.25);
+  background-color: hsl(var(--clr-primary-blue) / 0.2);
 }
 
 .secondary-btn {
@@ -292,9 +293,9 @@ select {
 
 /* Form elements */
 
-/* Text area */
+/* Text inputs */
 
-#message {
+.text-input {
   background-color: hsl(var(--clr-secondary-medium) / 0.2);
   outline: none;
   border: 1px solid hsl(var(--clr-secondary-medium) / 0.2);
@@ -303,14 +304,15 @@ select {
   resize: none;
   height: auto;
   transition: border-color 200ms ease-in-out;
+  position: relative;
 }
 
-#message::placeholder {
+.text-input::placeholder {
   color: hsl(var(--clr-secondary-medium) / 0.7);
 }
 
-#message:hover,
-#message:focus {
+.text-input:hover,
+.text-input:focus {
   cursor: pointer;
   border-color: hsl(var(--clr-primary-cyan));
 }

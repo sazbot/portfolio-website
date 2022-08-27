@@ -16,6 +16,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../index.css" />
     <title>Design System</title>
+
+    <!-- Custom JS -->
+    <script src="../error-message.js"></script>
   </head>
   <body>
     <header>
@@ -346,41 +349,61 @@
         >
           <span class="text-light">04</span>Forms
         </h2>
-        <div class="flex" style="--gap: 3rem">
-          <div class="flow" style="flex-basis: 100%">
-            <!-- Text Area -->
-            <div class="text-accent bold letter-spacing-4 uppercase">
-              <h3>Text Area</h3>
-            </div>
+        <form
+          action="https://formsubmit.co/s.fieldingsmith@gmail.com"
+          method="POST"
+        >
+          <div class="flex" style="--gap: 3rem">
+            <div class="flow" style="flex-basis: 100%">
+              <!-- Text Area -->
+              <div class="text-accent bold letter-spacing-4 uppercase">
+                <h3>Text Area</h3>
+              </div>
 
-            <div class="flow" style="--flow-space: 0.7rem">
-              <label for="message" class="block">Message</label>
-              <textarea
-                placeholder="What is your message?"
-                id="message"
-                name="message"
-                required
-              ></textarea>
+              <div class="flow" style="--flow-space: 0.7rem">
+                <label for="message" class="block">Message</label>
+                <textarea
+                  class="text-input"
+                  placeholder="What is your message?"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="flow" style="flex-basis: 100%">
-            <!-- Text Field -->
-            <div class="text-accent bold letter-spacing-4 uppercase">
-              <h3>Text Field</h3>
-            </div>
+            <div class="flow" style="flex-basis: 100%">
+              <!-- Text Field -->
+              <div class="text-accent bold letter-spacing-4 uppercase">
+                <h3>Text Field</h3>
+              </div>
 
-            <div class="flow" style="--flow-space: 0.7rem">
-              <label for="name" class="block">Name</label>
-              <input
-                type="text"
-                placeholder="Insert your name here..."
-                id="message"
-                name="message"
-                required
-              />
+              <div class="flow" style="--flow-space: 0.7rem">
+                <label for="name" class="block">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Insert your name here..."
+                  class="text-input"
+                  id="name"
+                  required
+                />
+              </div>
             </div>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.co/thanks.html"
+            />
           </div>
-        </div>
+          <div>
+            <button
+              type="submit"
+              class="btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
       </section>
     </div>
   </body>
