@@ -20,8 +20,8 @@
   <body>
     <header>
       <h1
-        class="ff-serif fs-800 bg-dark-grey letter-spacing-1"
-        style="color: white; padding: 3rem 2rem"
+        class="ff-serif fs-800 bold bg-dark-grey letter-spacing-1"
+        style="color: white; padding: 3rem 6rem"
       >
         Design System
       </h1>
@@ -32,13 +32,13 @@
         style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
       >
         <h2
-          class="ff-serif fs-700 letter-spacing-2"
+          class="ff-serif fs-700 bold letter-spacing-2"
           style="margin-bottom: 2rem"
         >
           <span class="text-light">01</span>Colours
         </h2>
         <div class="grid" style="grid-template-columns: repeat(4, 1fr)">
-          <div class="text-accent letter-spacing-4 uppercase">
+          <div class="text-accent bold letter-spacing-4 uppercase">
             <h3>Primary</h3>
           </div>
           <div>
@@ -51,7 +51,7 @@
                 width: 4rem;
               "
             ></div>
-            <p>Slightly Desaturated Cyan</p>
+            <p class="bold">Slightly Desaturated Cyan</p>
             <p class="text-medium">HEX : #5FB4A2</p>
             <p class="text-medium">RGB : rgb(95, 180, 162)</p>
             <p class="text-medium">HSL : hsl(167°, 36%, 54%)</p>
@@ -66,7 +66,7 @@
                 width: 4rem;
               "
             ></div>
-            <p>Dark Blue</p>
+            <p class="bold">Dark Blue</p>
             <p class="text-medium">HEX : #203A4C</p>
             <p class="text-medium">RGB : rgb(32, 58, 76)</p>
             <p class="text-medium">HSL : hsl(205°, 41%, 21%)</p>
@@ -81,13 +81,13 @@
                 width: 4rem;
               "
             ></div>
-            <p>Grayish Dark Blue</p>
+            <p class="bold">Grayish Dark Blue</p>
             <p class="text-medium">HEX : #33323D</p>
             <p class="text-medium">RGB : rgb(51, 50, 61)</p>
             <p class="text-medium">HSL : hsl(245°, 10%, 22%)</p>
           </div>
 
-          <div class="text-accent letter-spacing-4 uppercase">
+          <div class="text-accent bold letter-spacing-4 uppercase">
             <h3>Secondary</h3>
           </div>
           <div>
@@ -101,7 +101,7 @@
                 width: 4rem;
               "
             ></div>
-            <p>Very Light Grey</p>
+            <p class="bold">Very Light Grey</p>
             <p class="text-medium">HEX : #FAFAFA</p>
             <p class="text-medium">RGB : rgb(250, 250, 250)</p>
             <p class="text-medium">HSL : hsl(0°, 0%, 98%)</p>
@@ -116,7 +116,7 @@
                 width: 4rem;
               "
             ></div>
-            <p>Light Grey</p>
+            <p class="bold">Light Grey</p>
             <p class="text-medium">HEX : #EAEAEB</p>
             <p class="text-medium">RGB : rgb(234, 234, 235)</p>
             <p class="text-medium">HSL : hsl(240°, 2%, 92%)</p>
@@ -131,7 +131,7 @@
                 width: 4rem;
               "
             ></div>
-            <p>Bright Red</p>
+            <p class="bold">Bright Red</p>
             <p class="text-medium">HEX : #F43030</p>
             <p class="text-medium">RGB : rgb(244, 48, 48)</p>
             <p class="text-medium">HSL : hsl(0°, 90%, 57%)</p>
@@ -142,9 +142,157 @@
         id="typography"
         style="border-bottom: 1px solid lightgrey; padding-block: 2rem"
       >
-        <h2 class="ff-serif fs-700 letter-spacing-2">
+        <h2
+          class="ff-serif fs-700 bold letter-spacing-2"
+          style="margin-bottom: 2rem"
+        >
           <span class="text-light">02</span>Typography
         </h2>
+        <div
+          class="grid"
+          style="grid-template-columns: repeat(3, 1fr); margin-bottom: 2em"
+        >
+          <div class="text-accent bold letter-spacing-4 uppercase">
+            <h3>Font-Family</h3>
+          </div>
+          <div class="flex" style="gap: 0">
+            <div
+              class="bg-dark-grey fs-800 bold ff-serif flex"
+              style="
+                color: white;
+                aspect-ratio: 1;
+                width: 8rem;
+                border-bottom-right-radius: 35%;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Aa
+            </div>
+            <div
+              class="bg-medium flex"
+              style="
+                width: 16rem;
+                height: 8rem;
+                justify-content: center;
+                align-items: center;
+                margin-left: -2rem;
+                z-index: -1;
+              "
+            >
+              Ibarra Real Nova
+            </div>
+          </div>
+          <div class="flex" style="gap: 0">
+            <div
+              class="bg-dark-grey fs-800 bold flex"
+              style="
+                color: white;
+                aspect-ratio: 1;
+                width: 8rem;
+                border-bottom-right-radius: 35%;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Aa
+            </div>
+            <div
+              class="bg-medium flex"
+              style="
+                width: 16rem;
+                height: 8rem;
+                justify-content: center;
+                align-items: center;
+                margin-left: -2rem;
+                z-index: -1;
+              "
+            >
+              Public Sans
+            </div>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div style="flex-basis: 100%">
+            <div
+              class="text-accent bold letter-spacing-4 uppercase"
+              style="margin-bottom: 2rem"
+            >
+              <h3>Headings</h3>
+            </div>
+            <div>
+              <p class="text-medium">
+                <span class="bold">H1</span>, Ibarra Real Nova Bold, 50px, 50px
+                Line, -0,45 Character
+              </p>
+              <p
+                class="ff-serif fs-800 bold letter-spacing-1"
+                style="margin: 1rem 0 4rem 0"
+              >
+                Jived fox nymph grabs quick waltz
+              </p>
+            </div>
+            <div>
+              <p class="text-medium">
+                <span class="bold">H2</span>, Ibarra Real Nova Bold, 40px, 42px
+                Line, -0,36 Character
+              </p>
+              <p
+                class="ff-serif fs-700 bold letter-spacing-2"
+                style="margin: 1rem 0 4rem 0"
+              >
+                Jived fox nymph grabs quick waltz
+              </p>
+            </div>
+            <div>
+              <p class="text-medium">
+                <span class="bold">H3</span>, Ibarra Real Nova Regular, 32px,
+                36px Line, -0,29 Character
+              </p>
+              <p
+                class="ff-serif fs-600 bold letter-spacing-3"
+                style="margin: 1rem 0 4rem 0"
+              >
+                Jived fox nymph grabs quick waltz
+              </p>
+            </div>
+          </div>
+          <div style="flex-basis: 100%">
+            <div
+              class="text-accent bold letter-spacing-4 uppercase"
+              style="margin-bottom: 2rem"
+            >
+              <h3>Body</h3>
+            </div>
+            <div>
+              <p class="text-medium">
+                <span class="bold">Body 1</span>, Public Sans Regular, 16px,
+                30px Line
+              </p>
+              <p class="ff-sans fs-500" style="margin: 1rem 0 4rem 0">
+                Sed egestas, ante et vulputate volutpat, eros pede semper est,
+                vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+                adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
+                elementum hendrerit tortor. Sed semper lorem at felis.
+                Vestibulum volutpat, lacus a ultrices sagittis, mi neque.
+              </p>
+            </div>
+            <div>
+              <p class="text-medium">
+                <span class="bold">Body 2</span>, Public Sans Regular, 15px,
+                30px Line
+              </p>
+              <p class="ff-sans fs-400" style="margin: 1rem 0 4rem 0">
+                Sed egestas, ante et vulputate volutpat, eros pede semper est,
+                vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+                adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent
+                elementum hendrerit tortor. Sed semper lorem at felis.
+                Vestibulum volutpat, lacus a ultrices sagittis, mi neque.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </body>

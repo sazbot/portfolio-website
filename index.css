@@ -113,7 +113,7 @@ select {
 }
 
 .container {
-  padding-inline: 2em;
+  padding-inline: 6em;
   margin-inline: auto;
   max-width: 80rem;
 }
@@ -168,7 +168,6 @@ select {
 }
 
 /* Typography */
-
 .ff-serif {
   font-family: var(--ff-serif);
 }
@@ -187,6 +186,10 @@ select {
 }
 .letter-spacing-4 {
   letter-spacing: 5px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .uppercase {
