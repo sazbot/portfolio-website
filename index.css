@@ -260,7 +260,7 @@ select {
 }
 
 .primary-btn::before {
-  content: url(../images/icons/down-arrows.svg);
+  content: url(/images/icons/down-arrows.svg);
   background-color: hsl(var(--clr-secondary-light) / 0.1);
   position: relative;
   padding: 1.2em;
