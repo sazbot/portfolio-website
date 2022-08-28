@@ -130,7 +130,7 @@ a:active {
 }
 
 .container {
-  padding-inline: 6em;
+  padding-inline: 3rem;
   margin-inline: auto;
   max-width: 80rem;
 }
@@ -394,17 +394,18 @@ a:active {
 
 /* Hero */
 .hero-info {
-  background-color: red;
+  background-color: white;
+  margin-bottom: 3rem;
+}
+
+.hero-info > h1 {
+  margin-block: 1.5rem;
 }
 
 /* Article */
 .article-content .image-container {
   padding-bottom: 2.5rem;
   border-bottom: 0.5px solid lightgray;
-}
-
-.article-content img {
-  margin-inline: auto;
 }
 
 .article-info {
@@ -418,4 +419,13 @@ a:active {
 
 .article-text {
   margin-bottom: 1rem;
+}
+
+/* Contact me */
+#contact-me-section {
+  flex-direction: column;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  align-items: center;
+  text-align: center;
 }
