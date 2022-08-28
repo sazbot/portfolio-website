@@ -25,6 +25,21 @@
   --ff-sans: "Public Sans", sans-serif;
 }
 
+@media (min-width: 35rem) {
+  :root {
+    /* font-sizes */
+    --fs-300: 0.75rem;
+    --fs-400: 0.938rem;
+    --fs-500: 1rem;
+    --fs-600: 2rem;
+    --fs-700: 2.625rem;
+    --fs-800: 3.125rem;
+  }
+}
+
+@media (min-width: 45rem) {
+}
+
 /* ------------------- */
 /*        Reset        */
 /* ------------------- */
@@ -399,7 +414,7 @@ a:active {
 }
 
 .hero-info > h1 {
-  margin-block: 1.5rem;
+  margin-block: 1.8rem;
 }
 
 /* Article */

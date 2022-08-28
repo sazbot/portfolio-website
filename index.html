@@ -21,7 +21,7 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Frontend Mentor | Minimalist Portfolio</title>
   </head>
@@ -35,8 +35,18 @@
         </div>
         <div>
           <!-- Navigation -->
+          <!-- Hamburger button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <!-- Nav bar -->
           <nav>
             <ul
+              id="primary-navigation"
               class="navigation primary-navigation navigation-indicators flex"
             >
               <li>
@@ -82,7 +92,7 @@
               Hey, I’m Alex Spencer and I love building beautiful websites
             </h1>
             <!-- Hero button -->
-            <a href="#">
+            <a href="#about-me">
               <button
                 type="submit"
                 class="flex btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
@@ -93,7 +103,7 @@
                     alt="icon displaying three downward-pointing arrows"
                   />
                 </div>
-                <div><p>About Me</p></div>
+                <div><p id="about-me">About Me</p></div>
               </button>
             </a>
           </div>
