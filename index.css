@@ -89,7 +89,7 @@ body {
 
 /* Reset images */
 img,
-picutre {
+picture {
   max-width: 100%;
   display: block;
 }
@@ -482,9 +482,18 @@ a:active {
 }
 
 /* Article */
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+}
 .article-content .image-container {
   padding-bottom: 2.5rem;
   border-bottom: 0.5px solid lightgray;
+}
+
+.image-container picture {
+  min-width: 300px;
 }
 
 .article-info {
@@ -500,6 +509,38 @@ a:active {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 52rem) {
+  .article-content {
+    flex-direction: row;
+  }
+
+  .article-content .image-container {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .article-info {
+    margin-left: 2rem;
+    border-block: 0.5px solid lightgray;
+  }
+}
+
+@media (min-width: 67rem) {
+  .article-content > * {
+    flex-basis: 100%;
+    flex: 1;
+  }
+}
+
+/* Contact me */
+#contact-me-section {
+  flex-direction: column;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
 /* ------------------- */
 /*  Page-specific content  */
 /* ------------------- */
@@ -508,7 +549,7 @@ a:active {
 /* Hero */
 
 .hero-info {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%, 0.9);
   margin-bottom: 3rem;
 }
 
@@ -525,6 +566,7 @@ a:active {
   .hero-info {
     position: absolute;
     margin-bottom: 0;
+    padding-right: 1rem;
     width: 75%;
     bottom: 0;
   }
@@ -532,13 +574,4 @@ a:active {
   .hero-info button {
     margin-bottom: 0;
   }
-}
-
-/* Contact me */
-#contact-me-section {
-  flex-direction: column;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-  align-items: center;
-  text-align: center;
 }
