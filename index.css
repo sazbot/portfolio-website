@@ -487,6 +487,7 @@ a:active {
   display: flex;
   flex-direction: column;
 }
+
 .article-content .image-container {
   padding-bottom: 2.5rem;
   border-bottom: 0.5px solid lightgray;
@@ -578,5 +579,25 @@ a:active {
 
   .hero-info button {
     margin-bottom: 0;
+  }
+}
+
+/* Portfolio page */
+
+@media (min-width: 46rem) {
+  #portfolio-page .article-content {
+    align-items: center;
+  }
+
+  #project-two > .article-info,
+  #project-four > .article-info {
+    order: 0;
+    margin-left: 0;
+    padding-right: 2rem;
+  }
+
+  #project-two > .image-container,
+  #project-four > .image-container {
+    order: 1;
   }
 }
