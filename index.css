@@ -412,7 +412,7 @@ a:active {
     right: 3rem;
     top: 2.5rem;
     background: transparent;
-    background-image: url(images/icons/hamburger.svg);
+    background-image: url(./images/icons/hamburger.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 1.5rem;
@@ -421,7 +421,7 @@ a:active {
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
-    background-image: url(images/icons/close.svg);
+    background-image: url(./images/icons/close.svg);
   }
 
   .mobile-nav-toggle:hover,

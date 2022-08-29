@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
 
+// Add responsive navbar functionality
 hamburger.addEventListener("click", () => {
   let isOpen = primaryNav.getAttribute("data-visible");
   console.log(isOpen);
@@ -14,13 +15,3 @@ hamburger.addEventListener("click", () => {
     hamburger.setAttribute("aria-expanded", false);
   }
 });
-
-// when someone clicks the hamburger menu
-// if the menu is closed (if aria-expanded="false"):
-//  1. open it (translate x -100%)
-//  2. set aria-expanded="true"
-//  3. change icon to x
-// if the menu is open (if aria-expanded="false"):
-//  1. close it (translate x 100%)
-//  2. set aria-expanded="false"
-//  3. change icon to hamburger
