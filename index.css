@@ -450,6 +450,23 @@ a:active {
     contrast(100%);
 }
 
+@media (max-width: 42rem) {
+  .secondary-header,
+  .secondary-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secondary-header {
+    padding-block: 2.5rem;
+  }
+
+  .secondary-navigation {
+    padding-block: 1.5rem;
+    --gap: 1.5rem;
+  }
+}
+
 .social-media-links img {
   transition: filter 300ms ease-in-out;
 }
