@@ -509,7 +509,7 @@ a:active {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 52rem) {
+@media (min-width: 46rem) {
   .article-content {
     flex-direction: row;
   }
@@ -520,7 +520,7 @@ a:active {
   }
 
   .article-info {
-    margin-left: 2rem;
+    margin-left: 3rem;
     border-block: 0.5px solid lightgray;
   }
 }
@@ -549,7 +549,7 @@ a:active {
 /* Hero */
 
 .hero-info {
-  background-color: hsl(0, 0%, 100%, 0.9);
+  background-color: hsl(0, 0%, 100%);
   margin-bottom: 3rem;
 }
 
@@ -567,8 +567,13 @@ a:active {
     position: absolute;
     margin-bottom: 0;
     padding-right: 1rem;
-    width: 75%;
+    padding-top: 2rem;
+    width: auto;
     bottom: 0;
+  }
+
+  .hero-info > h1 {
+    max-width: 18ch;
   }
 
   .hero-info button {
