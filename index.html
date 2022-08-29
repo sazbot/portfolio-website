@@ -86,10 +86,17 @@
         <!-- Hero section -->
         <section id="hero-section" class="flex" style="flex-direction: column">
           <!-- Hero image -->
-          <img
-            src="images/homepage/mobile/image-homepage-hero.jpg"
-            alt="computer screen displaying a website featured in the portfolio"
-          />
+          <picture>
+            <source
+              media="(min-width: 45rem)"
+              srcset="./images/homepage/desktop/image-homepage-hero.jpg"
+            />
+            <img
+              src="./images/homepage/tablet/image-homepage-hero.jpg"
+              alt="computer screen displaying a website featured in the portfolio"
+            />
+          </picture>
+
           <div class="hero-info">
             <!-- Hero heading -->
             <h1 class="ff-serif fs-700 bold letter-spacing-1">
@@ -118,10 +125,25 @@
           <article class="article-content">
             <!-- About Me image -->
             <div class="image-container">
-              <img
+              <!-- <img
                 src="images/homepage/mobile/image-homepage-profile.jpg"
                 alt="professional photograph of Alex Spencer"
-              />
+              /> -->
+
+              <picture>
+                <source
+                  media="(min-width: 45rem)"
+                  srcset="./images/homepage/desktop/image-homepage-profile.jpg"
+                />
+                <source
+                  media="(min-width: 35rem)"
+                  srcset="./images/homepage/tablet/image-homepage-profile.jpg"
+                />
+                <img
+                  src="./images/homepage/mobile/image-homepage-profile.jpg"
+                  alt="professional photograph of Alex Spencer"
+                />
+              </picture>
             </div>
             <div class="article-info">
               <!-- About Me heading -->
