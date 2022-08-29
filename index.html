@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="index.css" />
 
     <title>Frontend Mentor | Minimalist Portfolio</title>
+
+    <!-- JS files -->
+    <script src="index.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -36,17 +39,18 @@
         <div>
           <!-- Navigation -->
           <!-- Hamburger button -->
-          <!-- <button
+          <button
             class="mobile-nav-toggle"
             aria-controls="primary-navigation"
             aria-expanded="false"
           >
             <span class="sr-only">Menu</span>
-          </button> -->
+          </button>
           <!-- Nav bar -->
           <nav>
             <ul
               id="primary-navigation"
+              data-visible="false"
               class="navigation primary-navigation navigation-indicators flex"
             >
               <li>
