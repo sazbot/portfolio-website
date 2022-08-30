@@ -2,11 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Frontend Mentor icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css" />
+
     <title>Thanks</title>
+
+    <!-- JS files -->
+    <script src="../index.js" defer></script>
   </head>
-  <body>
-    Thanks
+  <body id="thanks-page">
+    <!-- Header -->
+    <div class="container">
+      <header class="header primary-header flex">
+        <!-- Logo -->
+        <div>
+          <img class="logo" src="../images/logo.svg" alt="Site logo" />
+        </div>
+        <div>
+          <!-- Navigation -->
+          <!-- Hamburger button -->
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Menu</span>
+          </button>
+          <!-- Nav bar -->
+          <nav>
+            <ul
+              id="primary-navigation"
+              data-visible="false"
+              class="navigation primary-navigation navigation-indicators flex"
+            >
+              <li>
+                <a
+                  class="fs-300 uppercase text-dark letter-spacing-5"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="uppercase fs-300 text-dark letter-spacing-5"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="active uppercase fs-300 text-dark letter-spacing-5"
+                  href="./contact.html"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    Thank you for your message
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <footer class="header secondary-header flex">
+          <!-- Logo -->
+          <div>
+            <img class="logo" src="../images/logo.svg" alt="Site logo" />
+          </div>
+          <div>
+            <!-- Navigation -->
+            <nav>
+              <ul
+                class="navigation secondary-navigation navigation-indicators flex"
+              >
+                <li>
+                  <a
+                    class="fs-300 uppercase letter-spacing-5"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="uppercase fs-300 letter-spacing-5"
+                    href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="active uppercase fs-300 letter-spacing-5"
+                    href="./contact.html"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Social Media -->
+          <div class="social-media-links flex" style="align-items: center">
+            <a href="https://www.github.com"
+              ><img
+                class="logo"
+                src="../images/icons/github.svg"
+                alt="Github logo"
+            /></a>
+            <a href="https://www.Twitter.com"
+              ><img
+                class="logo"
+                src="../images/icons/twitter.svg"
+                alt="Twitter logo"
+            /></a>
+            <a href="https://www.linkedin.com"
+              ><img
+                class="logo"
+                src="../images/icons/linkedin.svg"
+                alt="LinkedIn logo"
+            /></a>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
