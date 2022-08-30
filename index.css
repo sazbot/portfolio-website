@@ -650,3 +650,19 @@ a:active {
     margin-inline: 6rem;
   }
 }
+
+/* Contact page */
+
+#contact-page .contact-page-article {
+  flex-direction: column;
+  border-top: 0.5px solid lightgray;
+  padding-block: 2rem;
+}
+
+.contact-page-article .social-media-links {
+  margin-top: 2rem;
+}
+
+.contact-page-article .text-input:not(#message) {
+  margin-bottom: 2rem;
+}
