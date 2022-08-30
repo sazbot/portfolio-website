@@ -82,117 +82,122 @@
 
     <!-- Main content -->
     <main>
-      <article class="contact-page-article container flex">
-        <!-- Get in Touch heading -->
-        <div>
-          <h2 class="ff-serif fs-700 bold letter-spacing-1">Get in Touch</h2>
-        </div>
-        <!-- Get in Touch content -->
-        <div>
-          <!-- Get in Touch text -->
-          <p class="ff-sans fs-500 lh-1 text-dark">
-            I’d love to hear about what you’re working on and how I could help.
-            I’m currently looking for a new role and am open to a wide range of
-            opportunities. My preference would be to find a position in a
-            company in London. But I’m also happy to hear about opportunites
-            that don’t fit that description. I’m a hard-working and positive
-            person who will always approach each task with a sense of purpose
-            and attention to detail. Please do feel free to check out my online
-            profiles below and get in touch using the form.
-          </p>
-          <!-- Get in Touch Social Media -->
-          <div class="social-media-links flex" style="align-items: center">
-            <a href="https://www.github.com"
-              ><img
-                class="logo"
-                src="../images/icons/github.svg"
-                alt="Github logo"
-            /></a>
-            <a href="https://www.Twitter.com"
-              ><img
-                class="logo"
-                src="../images/icons/twitter.svg"
-                alt="Twitter logo"
-            /></a>
-            <a href="https://www.linkedin.com"
-              ><img
-                class="logo"
-                src="../images/icons/linkedin.svg"
-                alt="LinkedIn logo"
-            /></a>
+      <div class="container">
+        <article class="contact-page-article flex">
+          <!-- Get in Touch heading -->
+          <div>
+            <h2 class="ff-serif fs-700 bold letter-spacing-1">Get in Touch</h2>
           </div>
-        </div>
-      </article>
-      <article class="contact-page-article container flex">
-        <!-- Contact Me heading -->
-        <div>
-          <h2 class="ff-serif fs-700 bold letter-spacing-1">Contact Me</h2>
-        </div>
-        <!-- Contact Me content -->
-        <div>
-          <!-- Contact Me form -->
-          <form
-            action="https://formsubmit.co/s.fieldingsmith@gmail.com"
-            method="POST"
-          >
-            <!-- Name input -->
-            <div class="flow" style="--flow-space: 0.7rem">
-              <label for="name" class="block">Name</label>
+          <!-- Get in Touch content -->
+          <div>
+            <!-- Get in Touch text -->
+            <p class="ff-sans fs-500 lh-1 text-dark">
+              I’d love to hear about what you’re working on and how I could
+              help. I’m currently looking for a new role and am open to a wide
+              range of opportunities. My preference would be to find a position
+              in a company in London. But I’m also happy to hear about
+              opportunites that don’t fit that description. I’m a hard-working
+              and positive person who will always approach each task with a
+              sense of purpose and attention to detail. Please do feel free to
+              check out my online profiles below and get in touch using the
+              form.
+            </p>
+            <!-- Get in Touch Social Media -->
+            <div class="social-media-links flex" style="align-items: center">
+              <a href="https://www.github.com"
+                ><img
+                  class="logo"
+                  src="../images/icons/github.svg"
+                  alt="Github logo"
+              /></a>
+              <a href="https://www.Twitter.com"
+                ><img
+                  class="logo"
+                  src="../images/icons/twitter.svg"
+                  alt="Twitter logo"
+              /></a>
+              <a href="https://www.linkedin.com"
+                ><img
+                  class="logo"
+                  src="../images/icons/linkedin.svg"
+                  alt="LinkedIn logo"
+              /></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="container">
+        <article class="contact-page-article flex">
+          <!-- Contact Me heading -->
+          <div>
+            <h2 class="ff-serif fs-700 bold letter-spacing-1">Contact Me</h2>
+          </div>
+          <!-- Contact Me content -->
+          <div>
+            <!-- Contact Me form -->
+            <form
+              action="https://formsubmit.co/s.fieldingsmith@gmail.com"
+              method="POST"
+            >
+              <!-- Name input -->
+              <div class="flow" style="--flow-space: 0.7rem">
+                <label for="name" class="block">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Jane Appleseed"
+                  class="text-input"
+                  id="name"
+                  required
+                />
+              </div>
+
+              <!-- Email address input -->
+              <div class="flow" style="--flow-space: 0.7rem">
+                <label for="email" class="block">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="email@example.com"
+                  class="text-input"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <!-- Message input -->
+              <div class="flow" style="--flow-space: 0.7rem">
+                <label for="message" class="block">Message</label>
+                <textarea
+                  class="text-input"
+                  placeholder="How can I help?"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
               <input
-                type="text"
-                name="name"
-                placeholder="Jane Appleseed"
-                class="text-input"
-                id="name"
-                required
+                type="hidden"
+                name="_next"
+                value="https://sazbot.github.io/portfolio-website/pages/thanks"
               />
-            </div>
 
-            <!-- Email address input -->
-            <div class="flow" style="--flow-space: 0.7rem">
-              <label for="email" class="block">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="email@example.com"
-                class="text-input"
-                id="email"
-                required
-              />
-            </div>
-
-            <!-- Message input -->
-            <div class="flow" style="--flow-space: 0.7rem">
-              <label for="message" class="block">Message</label>
-              <textarea
-                class="text-input"
-                placeholder="How can I help?"
-                id="message"
-                name="message"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://sazbot.github.io/portfolio-website/pages/thanks"
-            />
-
-            <!-- Submit button -->
-            <div>
-              <button
-                type="submit"
-                class="flex btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
-              >
-                <div>
-                  <img src="../images/icons/down-arrows.svg" alt="" />
-                </div>
-                <div><p>Send Message</p></div>
-              </button>
-            </div>
-          </form>
-        </div>
-      </article>
+              <!-- Submit button -->
+              <div>
+                <button
+                  type="submit"
+                  class="flex btn primary-btn uppercase bg-dark text-white ff-sans fs-300 letter-spacing-5"
+                >
+                  <div>
+                    <img src="../images/icons/down-arrows.svg" alt="" />
+                  </div>
+                  <div><p>Send Message</p></div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
     </main>
 
     <!-- Footer -->

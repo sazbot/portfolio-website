@@ -666,3 +666,10 @@ a:active {
 .contact-page-article .text-input:not(#message) {
   margin-bottom: 2rem;
 }
+
+@media (min-width: 46rem) {
+  #contact-page main {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+}
