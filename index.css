@@ -146,7 +146,7 @@ a:active {
 }
 
 .container {
-  padding-inline: 3rem;
+  padding-inline: clamp(3rem, 7vw, 7rem);
   margin-inline: auto;
   max-width: 80rem;
 }
@@ -583,17 +583,49 @@ a:active {
 }
 
 /* Portfolio page */
+#projects-section > *:where(:not(:first-child)) {
+  margin-top: 3.5rem;
+}
+
+#projects-section .image-container {
+  padding-bottom: 2rem;
+}
+
+#projects-section .article-title {
+  padding-block: 1.5rem;
+}
+
+#projects-section .article-info {
+  padding-bottom: 1.5rem;
+}
 
 @media (min-width: 46rem) {
   #portfolio-page .article-content {
     align-items: center;
   }
 
+  #projects-section:first-child {
+    margin-top: 5rem;
+  }
+
+  #projects-section > *:where(:not(:last-child)) {
+    margin-bottom: 4rem;
+  }
+
+  #projects-section .article-text {
+    max-width: 50ch;
+  }
+
+  #project-one > .article-info,
+  #project-three > .article-info {
+    margin-left: 4rem;
+  }
+
   #project-two > .article-info,
   #project-four > .article-info {
     order: 0;
     margin-left: 0;
-    padding-right: 2rem;
+    margin-right: 4rem;
   }
 
   #project-two > .image-container,
