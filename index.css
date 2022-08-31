@@ -551,6 +551,15 @@ a:active {
   color: hsl(var(--clr-primary-grey));
 }
 
+.slider {
+  transition: background-color 300ms ease-in-out;
+}
+
+.slider:hover,
+.slider:focus {
+  background-color: hsl(var(--clr-primary-grey) / 0.03);
+}
+
 .left-slider {
   border-right: 0.5px solid lightgray;
   align-items: start;
