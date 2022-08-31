@@ -103,13 +103,15 @@
       <div class="container project-info flex">
         <!-- Project Intro -->
         <article class="project-intro article-content">
-          <div class="article-info">
+          <div class="article-info grid">
             <!-- Project heading -->
             <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
               Manage
             </h2>
             <!-- Project content -->
-            <p class="article-text ff-sans fs-400 lh-1 text-dark">
+            <p
+              class="project-content article-text ff-sans fs-400 lh-1 text-dark"
+            >
               This project required me to build a fully responsive landing page
               to the designs provided. I used HTML5, along with CSS Grid and
               JavaScript for the areas that required interactivity, such as the
@@ -133,8 +135,9 @@
             >
           </div>
         </article>
+
+        <!-- Project Background -->
         <div class="project-details">
-          <!-- Project Background -->
           <!-- Background heading -->
           <h3 class="article-title ff-serif fs-600 letter-spacing-3">
             Project Background
@@ -151,33 +154,35 @@
           </p>
 
           <!-- Static Previews -->
-          <h3 class="article-title ff-serif fs-600 letter-spacing-3">
-            Static Previews
-          </h3>
-          <!-- Preview 1 -->
-          <picture class="preview-1">
-            <source
-              media="(min-width: 46rem)"
-              srcset="../images/detail/mobile/image-manage-preview-1@2x.jpg"
-            />
+          <section class="static-previews">
+            <h3 class="article-title ff-serif fs-600 letter-spacing-3">
+              Static Previews
+            </h3>
+            <!-- Preview 1 -->
+            <picture class="preview-1">
+              <source
+                media="(min-width: 30rem)"
+                srcset="../images/detail/mobile/image-manage-preview-1@2x.jpg"
+              />
 
-            <img
-              src="../images/detail/mobile/image-manage-preview-1.jpg"
-              alt="Screenshot of the Manage web app homepage"
-            />
-          </picture>
-          <!-- Preview 2 -->
-          <picture class="preview-2">
-            <source
-              media="(min-width: 46rem)"
-              srcset="../images/detail/mobile/image-manage-preview-2@2x.jpg"
-            />
+              <img
+                src="../images/detail/mobile/image-manage-preview-1.jpg"
+                alt="Screenshot of the Manage web app homepage"
+              />
+            </picture>
+            <!-- Preview 2 -->
+            <picture class="preview-2">
+              <source
+                media="(min-width: 30rem)"
+                srcset="../images/detail/mobile/image-manage-preview-2@2x.jpg"
+              />
 
-            <img
-              src="../images/detail/mobile/image-manage-preview-2.jpg"
-              alt="Screenshot of the Manage web app homepage"
-            />
-          </picture>
+              <img
+                src="../images/detail/mobile/image-manage-preview-2.jpg"
+                alt="Screenshot of the Manage web app homepage"
+              />
+            </picture>
+          </section>
         </div>
       </div>
     </main>
@@ -189,6 +194,7 @@
           <a class="slider left-slider flex" href="./fylo.html">
             <div class="left-arrow">
               <img
+                class="left-arrow-image"
                 src="../images/icons/arrow-left.svg"
                 alt="arrow pointing left"
               />
@@ -205,6 +211,7 @@
           <a class="slider right-slider flex" href="./bookmark.html">
             <div class="right-arrow">
               <img
+                class="right-arrow-image"
                 src="../images/icons/arrow-right.svg"
                 alt="arrow pointing right"
               />

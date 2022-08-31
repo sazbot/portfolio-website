@@ -561,6 +561,37 @@ a:active {
   align-items: end;
 }
 
+@media (min-width: 46rem) {
+  .slider {
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 1.5rem;
+  }
+
+  .slider .article-text {
+    margin-bottom: 0;
+  }
+
+  .left-slider {
+    justify-content: start;
+  }
+
+  .right-slider {
+    justify-content: end;
+  }
+
+  .right-slider > *:first-child {
+    order: 2;
+  }
+
+  .left-arrow-image {
+    margin-right: 1rem;
+  }
+  .right-arrow-image {
+    margin-left: 1rem;
+  }
+}
+
 /* ----------------------- */
 /*  Page-specific content  */
 /* ----------------------- */
@@ -734,6 +765,7 @@ a:active {
 
 .project-intro .article-info {
   padding-bottom: 1rem;
+  gap: 0;
 }
 
 .project-details .article-title:first-of-type {
@@ -752,4 +784,35 @@ a:active {
 .project-page .preview-2 {
   margin-top: 2rem;
   margin-bottom: 3.5rem;
+}
+
+@media (min-width: 46rem) {
+  .project-intro .article-info {
+    margin-left: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "title main"
+      "skills main"
+      "link main";
+    column-gap: 3rem;
+  }
+
+  .project-intro .article-title {
+    grid-area: title;
+    padding-bottom: 1rem;
+  }
+
+  .project-intro .project-skills {
+    margin: 0;
+    grid-area: skills;
+  }
+
+  .project-intro .btn {
+    grid-area: link;
+  }
+  .project-intro .project-content {
+    padding-top: 2rem;
+    grid-area: main;
+  }
 }
