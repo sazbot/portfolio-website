@@ -28,7 +28,7 @@
     <!-- JS files -->
     <script src="../index.js" defer></script>
   </head>
-  <body id="manage-page">
+  <body class="project-page manage-page">
     <!-- Header -->
     <div class="container">
       <header class="header primary-header flex">
@@ -83,7 +83,7 @@
     <!-- Main content -->
     <main>
       <div class="container">
-        <picture>
+        <picture class="project-hero">
           <source
             media="(min-width: 67rem)"
             srcset="../images/detail/desktop/image-manage-hero@2x.jpg"
@@ -102,7 +102,7 @@
 
       <div class="container project-info flex">
         <!-- Project Intro -->
-        <article id="project-intro" class="article-content">
+        <article class="project-intro article-content">
           <div class="article-info">
             <!-- Project heading -->
             <h2 class="article-title ff-serif fs-700 bold letter-spacing-1">
@@ -117,12 +117,14 @@
             </p>
 
             <!-- Project skills -->
-            <p class="article-text ff-sans fs-400 lh-1 bold text-accent">
+            <p
+              class="project-skills article-text ff-sans fs-400 lh-1 bold text-accent"
+            >
               Interaction Design / Front End Development HTML / CSS / JS
             </p>
 
             <!-- Project button -->
-            <a href="./projects.html"
+            <a href="#"
               ><button
                 class="btn secondary-btn uppercase ff-sans fs-300 letter-spacing-5"
               >
@@ -153,7 +155,7 @@
             Static Previews
           </h3>
           <!-- Preview 1 -->
-          <picture>
+          <picture class="preview-1">
             <source
               media="(min-width: 46rem)"
               srcset="../images/detail/mobile/image-manage-preview-1@2x.jpg"
@@ -165,7 +167,7 @@
             />
           </picture>
           <!-- Preview 2 -->
-          <picture>
+          <picture class="preview-2">
             <source
               media="(min-width: 46rem)"
               srcset="../images/detail/mobile/image-manage-preview-2@2x.jpg"
@@ -181,30 +183,39 @@
     </main>
 
     <!-- Carousel Slider -->
-    <div class="slider container flex">
-      <div class="left-slider flex">
-        <div class="left-arrow">
-          <img src="../images/icons/arrow-left.svg" alt="arrow pointing left" />
+    <div class="container">
+      <div class="carousel flex">
+        <div>
+          <a class="slider left-slider flex" href="./fylo.html">
+            <div class="left-arrow">
+              <img
+                src="../images/icons/arrow-left.svg"
+                alt="arrow pointing left"
+              />
+            </div>
+            <div class="left-slider-content">
+              <h3 class="ff-serif fs-600 letter-spacing-3">Fylo</h3>
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                Previous Project
+              </p>
+            </div>
+          </a>
         </div>
-        <div class="left-slider-content">
-          <h3 class="article-title ff-serif fs-600 letter-spacing-3">Fylo</h3>
-          <p class="article-text ff-sans fs-400 lh-1 text-dark">
-            Previous Project
-          </p>
-        </div>
-      </div>
-      <div class="right-slider flex">
-        <div class="right-arrow">
-          <img
-            src="../images/icons/arrow-right.svg"
-            alt="arrow pointing right"
-          />
-        </div>
-        <div class="right-slider-content">
-          <h3 class="article-title ff-serif fs-600 letter-spacing-3">
-            Bookmark
-          </h3>
-          <p class="article-text ff-sans fs-400 lh-1 text-dark">Next Project</p>
+        <div>
+          <a class="slider right-slider flex" href="./bookmark.html">
+            <div class="right-arrow">
+              <img
+                src="../images/icons/arrow-right.svg"
+                alt="arrow pointing right"
+              />
+            </div>
+            <div class="right-slider-content">
+              <h3 class="ff-serif fs-600 letter-spacing-3">Bookmark</h3>
+              <p class="article-text ff-sans fs-400 lh-1 text-dark">
+                Next Project
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </div>

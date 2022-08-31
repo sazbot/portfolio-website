@@ -534,6 +534,33 @@ a:active {
   text-align: center;
 }
 
+/* Carousel */
+.carousel {
+  border-block: 0.5px solid lightgray;
+  gap: 0;
+}
+
+.carousel > * {
+  flex: 1;
+}
+
+.slider {
+  padding-top: 1.5rem;
+  justify-content: center;
+  flex-direction: column;
+  color: hsl(var(--clr-primary-grey));
+}
+
+.left-slider {
+  border-right: 0.5px solid lightgray;
+  align-items: start;
+}
+
+.right-slider {
+  text-align: right;
+  align-items: end;
+}
+
 /* ----------------------- */
 /*  Page-specific content  */
 /* ----------------------- */
@@ -685,4 +712,44 @@ a:active {
   .contact-page-article > div:nth-of-type(2) {
     flex: 60%;
   }
+}
+
+/* Project page */
+.project-page .project-info {
+  flex-direction: column;
+}
+
+.project-intro {
+  border-top: 0.5px solid lightgray;
+  margin-top: 2rem;
+}
+
+.project-intro .article-title {
+  padding-block: 2rem;
+}
+
+.project-intro .project-skills {
+  margin-top: 1.5rem;
+}
+
+.project-intro .article-info {
+  padding-bottom: 1rem;
+}
+
+.project-details .article-title:first-of-type {
+  padding-bottom: 2rem;
+}
+
+.project-details .article-text {
+  margin-bottom: 0;
+}
+
+.project-details .article-title:nth-of-type(1),
+.project-details .article-title:nth-of-type(2) {
+  padding-bottom: 2.5rem;
+}
+
+.project-page .preview-2 {
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
 }
