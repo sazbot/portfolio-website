@@ -789,6 +789,7 @@ a:active {
 @media (min-width: 46rem) {
   .project-intro .article-info {
     margin-left: 0;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -814,5 +815,21 @@ a:active {
   .project-intro .project-content {
     padding-top: 2rem;
     grid-area: main;
+  }
+}
+
+@media (min-width: 56rem) {
+  .project-intro .article-info {
+    display: block;
+  }
+
+  .project-intro .btn {
+    margin-top: 2rem;
+  }
+
+  .project-page .project-info {
+    flex-direction: row;
+    --gap: 6rem;
+    margin-top: 3.5rem;
   }
 }
