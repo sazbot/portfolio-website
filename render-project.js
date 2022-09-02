@@ -4,17 +4,17 @@ const rightSliderLink = document.querySelector(".right-slider");
 const leftSliderText = document.querySelector(".left-slider-title");
 const rightSliderText = document.querySelector(".right-slider-title");
 
-const projectNames = ["Manage", "Bookmark", "Insure", "Fylo"];
-
 const urlParams = new URLSearchParams(window.location.search);
 const projectNumber = parseInt(urlParams.get("project"));
 
+const projectNames = ["Manage", "Bookmark", "Insure", "Fylo"];
+
 // Render project details depending on URL parameters
 renderProject(projectNumber);
-renderSlider(projectNumber);
 
 function renderProject(projectNumber) {
   projectList[projectNumber - 1].removeAttribute("hidden");
+  renderSlider(projectNumber);
 }
 
 function renderSlider(projectNumber) {
