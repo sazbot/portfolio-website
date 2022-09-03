@@ -9,18 +9,11 @@ relocateErrorMessages();
 replaceValidationUI();
 
 // Hide error message on click/keypress in input/textarea field
-document.addEventListener("click", (e) => {
-  hideErrorMessages(e);
-});
-document.addEventListener("keypress", (e) => {
-  hideErrorMessages(e);
-});
+document.addEventListener("click", (e) => hideErrorMessages(e));
+document.addEventListener("keypress", (e) => hideErrorMessages(e));
 
 // Initiate loading animation on form submission
-form.addEventListener("submit", () => {
-  console.log("input validated");
-  initiateLoader();
-});
+form.addEventListener("submit", () => initiateLoader());
 
 function suppressValidationUI(form) {
   // Suppress default tooltips
