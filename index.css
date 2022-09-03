@@ -756,6 +756,12 @@ html {
   box-shadow: 0 0 0 1px hsl(var(--clr-secondary-red));
 }
 
+.input-group.error input:focus,
+.input-group.error textarea:focus {
+  outline: none;
+  border: none;
+}
+
 .input-group .error-msg {
   margin-top: 0;
   position: absolute;
@@ -765,6 +771,11 @@ html {
 
 .input-group.error .error-msg {
   display: block;
+}
+
+.input-group.error input:valid,
+.input-group.error textarea:valid {
+  box-shadow: none;
 }
 
 @media (min-width: 46rem) {
