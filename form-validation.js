@@ -23,7 +23,7 @@ form.addEventListener("submit", () => {
 });
 
 function suppressValidationUI(form) {
-  // Suppress the default bubbles
+  // Suppress default tooltips
   form.addEventListener(
     "invalid",
     (e) => {
@@ -42,8 +42,8 @@ function suppressValidationUI(form) {
 
 function relocateErrorMessages() {
   submitButton.addEventListener("click", () => {
-    let invalidFields = form.querySelectorAll(":invalid"),
-      errorMessages = form.querySelectorAll(".error-msg"),
+    let invalidFields = form.querySelectorAll(":invalid");
+    let errorMessages = form.querySelectorAll(".error-msg"),
       parent;
 
     // Remove any existing messages
@@ -83,9 +83,9 @@ function hideErrorMessages(e) {
 
   if (selectedField.classList.value === "text-input") {
     selectedField.parentNode.classList.remove("error");
-    if (selectedField.parentNode.lastChild.classList.value === "error-msg") {
-      selectedField.parentNode.lastChild.remove();
-    }
+    if (selectedField.parentNode.lastChild.classList.value !== "error-msg")
+      return;
+    else selectedField.parentNode.lastChild.remove();
   }
 }
 
