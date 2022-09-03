@@ -6,8 +6,6 @@ suppressValidationUI(form);
 
 relocateErrorMessages();
 
-replaceValidationUI();
-
 // Hide error message on click/keypress in input/textarea field
 document.addEventListener("click", (e) => hideErrorMessages(e));
 document.addEventListener("keypress", (e) => hideErrorMessages(e));
@@ -61,13 +59,6 @@ function relocateErrorMessages() {
     if (invalidFields.length > 0) {
       invalidFields[0].focus();
     }
-  });
-}
-
-function replaceValidationUI() {
-  let forms = document.querySelectorAll("form");
-  forms.forEach((form) => {
-    suppressValidationUI(form);
   });
 }
 
