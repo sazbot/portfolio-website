@@ -765,6 +765,7 @@ html {
 .input-group .error-msg {
   margin-top: 0;
   position: absolute;
+  bottom: -1.3rem;
   display: none;
   color: hsl(var(--clr-secondary-red));
 }
