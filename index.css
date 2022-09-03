@@ -320,6 +320,26 @@ html {
   color: white;
 }
 
+.loader {
+  pointer-events: none;
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: white;
+  animation: spin 1s ease infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 /* Form elements */
 /* Text inputs */
 .text-input {

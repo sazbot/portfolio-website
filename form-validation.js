@@ -1,5 +1,6 @@
 const form = document.querySelector("form");
 const submitButton = document.querySelector(".submit-btn");
+const buttonImage = document.querySelector(".button-image");
 
 suppressValidationUI(form);
 
@@ -7,7 +8,19 @@ relocateErrorMessages();
 
 replaceValidationUI();
 
-hideErrorMessages();
+// Hide error message on click/keypress in input/textarea field
+document.addEventListener("click", (e) => {
+  hideErrorMessages(e);
+});
+document.addEventListener("keypress", (e) => {
+  hideErrorMessages(e);
+});
+
+// Initiate loading animation on form submission
+form.addEventListener("submit", () => {
+  console.log("input validated");
+  initiateLoader();
+});
 
 function suppressValidationUI(form) {
   // Suppress the default bubbles
@@ -65,15 +78,17 @@ function replaceValidationUI() {
   });
 }
 
-function hideErrorMessages() {
-  // Hide error message when input/textarea field clicked
+function hideErrorMessages(e) {
+  const selectedField = e.target;
 
-  document.addEventListener("click", (e) => {
-    const selectedField = e.target;
-
-    if (selectedField.classList.value === "text-input") {
-      selectedField.parentNode.classList.remove("error");
+  if (selectedField.classList.value === "text-input") {
+    selectedField.parentNode.classList.remove("error");
+    if (selectedField.parentNode.lastChild.classList.value === "error-msg") {
       selectedField.parentNode.lastChild.remove();
     }
-  });
+  }
+}
+
+function initiateLoader() {
+  buttonImage.innerHTML = "<div class='loader'></div>";
 }
