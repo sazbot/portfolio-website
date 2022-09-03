@@ -735,8 +735,36 @@ html {
   margin-top: 2rem;
 }
 
-.contact-page-article .text-input:not(#message) {
-  margin-bottom: 2rem;
+.contact-page-article label:not(#name) {
+  margin-top: 2rem;
+}
+
+.contact-page-article input:not(#message) {
+  margin-bottom: 0.5rem;
+}
+
+#contact-page button {
+  margin-top: 2.5rem;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group.error input,
+.input-group.error textarea {
+  box-shadow: 0 0 0 1px hsl(var(--clr-secondary-red));
+}
+
+.input-group .error-msg {
+  margin-top: 0;
+  position: absolute;
+  display: none;
+  color: hsl(var(--clr-secondary-red));
+}
+
+.input-group.error .error-msg {
+  display: block;
 }
 
 @media (min-width: 46rem) {

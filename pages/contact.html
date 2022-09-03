@@ -27,6 +27,7 @@
 
     <!-- JS files -->
     <script src="../toggle-nav.js" defer></script>
+    <script src="../form-validation.js" defer></script>
   </head>
   <body id="contact-page">
     <!-- Header -->
@@ -140,7 +141,7 @@
               method="POST"
             >
               <!-- Name input -->
-              <div class="flow" style="--flow-space: 0.7rem">
+              <div class="input-group flow" style="--flow-space: 0.7rem">
                 <label for="name" class="block">Name</label>
                 <input
                   type="text"
@@ -150,10 +151,11 @@
                   id="name"
                   required
                 />
+                <span class="error-msg">This field is required</span>
               </div>
 
               <!-- Email address input -->
-              <div class="flow" style="--flow-space: 0.7rem">
+              <div class="input-group flow" style="--flow-space: 0.7rem">
                 <label for="email" class="block">Email Address</label>
                 <input
                   type="email"
@@ -163,10 +165,11 @@
                   id="email"
                   required
                 />
+                <span class="error-msg">This field is required</span>
               </div>
 
               <!-- Message input -->
-              <div class="flow" style="--flow-space: 0.7rem">
+              <div class="input-group flow" style="--flow-space: 0.7rem">
                 <label for="message" class="block">Message</label>
                 <textarea
                   class="text-input"
@@ -175,6 +178,7 @@
                   name="message"
                   required
                 ></textarea>
+                <span class="error-msg">This field is required</span>
               </div>
               <input
                 type="hidden"
